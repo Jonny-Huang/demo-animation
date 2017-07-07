@@ -8,3 +8,5 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Facebook：[https://www.facebook.com/groups/augularjs.tw/](https://www.facebook.com/groups/augularjs.tw/)  
 forum：[https://forum.angular.tw/](https://forum.angular.tw/)
+
+![sample](/sample.gif)
