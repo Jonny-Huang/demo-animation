@@ -1,23 +1,7 @@
-import { style, animate, transition, keyframes } from '@angular/animations';
+import {animate, animation, keyframes, style} from '@angular/animations';
 
-const _animate = animate('1s', keyframes([
-  style({ transform: 'translate3d(0, 2000px, 0)', opacity: 0, offset: 0 }),
-  style({ transform: 'none', opacity: 1, offset: 1 })
-]));
-
-export const fadeInUpBig = transition('* => fadeInUpBig', _animate);
-
-// @keyframes fadeInUpBig {
-//   from {
-//     opacity: 0;
-//     transform: translate3d(0, 2000px, 0);
-//   }
-//   to {
-//     opacity: 1;
-//     transform: none;
-//   }
-// }
-
-// .fadeInUpBig {
-//   animation-name: fadeInUpBig;
-// }
+export const fadeInUpBig = animation([animate(
+    '1s', keyframes([
+      style({transform: 'translate3d(0, 2000px, 0)', opacity: 0, offset: 0}),
+      style({transform: 'none', opacity: 1, offset: 1})
+    ]))]);
